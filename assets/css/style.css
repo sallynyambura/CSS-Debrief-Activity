@@ -1,9 +1,17 @@
+*{
+	box-sizing: boder-box;
+}
 
 body {
+	font-family: 'Open Sans', sans-serif;
+	background-image: linear gradient whitesmoke rgb(35, 47, 58);
 
 }
 
 /* Navigation Styles */
+nav{
+
+}
 nav ul {
 	list-style-type: none;
 	overflow: hidden;
@@ -12,13 +20,14 @@ nav ul {
 	width: 100%;
 }
 nav li {
-	display: table-cell
+	display: table-cell;
 }
 li a {
 	display: block;
 	color: white;
-	padding: 30px 30px 30px 30px;
+	padding: 30px;
 	text-decoration: none;
+	text-align: center;
 }
 li a:hover {
 	background-color: rgb(40, 39, 39);
@@ -39,18 +48,27 @@ h1 {
 section {
 	display: flex;
 	justify-content: center;
-
 	width: 80%;
 	margin: auto;
+	flex-direction: column;
 }
 .center-title {
+	text-align: center; 
 
 }
 
 /* About Section Styles */
 #about-sec {
 	display: flex;
+	flex-direction: column;
 
+}
+#about-sec h2{
+	font-size: 1.95em; 
+	padding: 0 1.5em; 
+}
+#about-sec #about-blurb{
+	padding: 0 2.5em; 
 }
 #about-sec div {
 	display: inline-flex;
@@ -60,22 +78,74 @@ section {
 }
 figure {
 	display: flex;
+	width: 30%;
+	flex-direction: column;
 
+}
+figcaption {
+	font-style: italic;
+	background-color: rgba(35, 47, 58);
+	color: whitesmoke;
+	padding: 0.25em; 
+	opacity: 0.5;
+	font-size: 0.85em; 
 }
 
 /* Aside Styles */
 aside {
 	display: flex;
 	flex-direction: column;
+	border: 4px double black;
+	margin: 1em 0;
+	color: rgba(35, 47, 58, 0.05);
+	background-color: rgba(35, 47, 58, 0.05);
 
 }
+aside p{
+	font-weight: 600;
+	font-size: 1.25em;
+	background-color: rgb(35, 47, 58);
+	color: whitesmoke;
+	padding: 0.5em;
+	margin: 0;
+	text-transform: uppercase;
+	border-bottom: 4px double rgba(0, 0, 0, 0.77);
+	opacity:0.6;
+
+}
+aside ul{ 
+	font-size: 0.9em;
+	margin: 1em;
+	padding: 0, 0.75em, 1em;
+}
+aside ul li {
+	color: black;
+}
+aside ul li a{
+	text-align: justify;
+	padding: 0;
+	color: rgb(35, 47, 58);
+	text-decoration: underline;
+}
+aside ul li a:hover{
+	color: whitesmoke;
+	background-color: rgba(35, 47, 58, 0.5);
+}
+
 
 /* Table - Concert Schedule Styles */
 #concert-schedule-sec {
-	max-width: 940px;
+	width: 100vw;
 	margin: 0 auto;
 	height: max-content;
-	}
+	color: rgb(255, 54, 154);
+	background-color: black; 
+	padding: 2em;
+}
+#concert-schedule-sec h3{
+	font-size: 2em;
+}
+
 
 /* Form - Ticket Form Styles */
 form {
